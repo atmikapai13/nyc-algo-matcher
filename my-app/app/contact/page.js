@@ -23,7 +23,7 @@ export default function ContactPage() {
         <NameCard
           name="Atmika Pai"
           major="MS in Information Science, Conc. in Urban Tech"
-          website="atmikapai.myportfolio.com"
+          website="atmikapai.dev"
           email="atmikapai13@gmail.com"
         />
         <NameCard

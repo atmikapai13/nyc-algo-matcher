@@ -11,7 +11,7 @@ export default function NavBar() {
     fontFamily: "var(--text-font)",
     color: "var(--main-text-color)",
     fontWeight: pathname === path ? "bold" : "normal",
-    textDecoration: pathname === path ? "underline" : "none",
+    textDecoration: "none",
   });
 
   return (
@@ -64,6 +64,9 @@ export default function NavBar() {
           <Link href="/survey" style={navLinkStyle("/survey")}>
             Survey
           </Link>
+          <Link href="/latestnews" style={navLinkStyle("/latestnews")}>
+            Latest News
+          </Link>
           <Link href="/background" style={navLinkStyle("/background")}>
             Learn More
           </Link>
@@ -78,6 +81,9 @@ export default function NavBar() {
         <div className="mt-4 flex flex-col space-y-4 md:hidden text-lg">
           <Link href="/survey" style={navLinkStyle("/survey")}>
             Survey
+          </Link>
+          <Link href="/latestnews" style={navLinkStyle("/latestnews")}>
+            Latest News
           </Link>
           <Link href="/background" style={navLinkStyle("/background")}>
             Learn More

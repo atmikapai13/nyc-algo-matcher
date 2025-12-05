@@ -1,8 +1,10 @@
 "use client";
 
 import FadeInSection from "../../components/ui/FadeInSection";
-
 import QuoteBlock from "../../components/ui/QuoteBlock";
+import Timeline from "../../components/ui/Timeline";
+import QuickLinks from "../../components/ui/QuickLinks";
+import FAQAccordion from "../../components/ui/FAQAccordion";
 import { motion } from "framer-motion";
 
 
@@ -25,16 +27,25 @@ export default function BackgroundPage() {
             />
             <p className="text-2xl text-teal-900">
             New York City is a world leader in publishing open datasets about all things urban.
-            Following NYC Local Law 11 of 2012 (Open Data Law), all <em>“public”</em> data used in city agencies is mandated to be made freely available on a single web portal.
-            Today, the NYC Open Data portal contains 2600 datasets with millions of data points spanning topics like housing, health, transit, inspections, policing, and more.</p>
+            Following NYC Local Law 11 of 2012 (Open Data Law), all <em>"public"</em> data used in city agencies is mandated to be made freely available on a single web portal.
+            Today, the NYC Open Data portal contains 2,600 datasets with millions of data points spanning topics like housing, health, transit, inspections, policing, and more.</p>
         </div>
+        </FadeInSection>
+
+        <FadeInSection index={1.5}>
+          <div className="text-left">
+            <h3 className="text-3xl font-bold text-teal-900 mb-8">
+              Timeline: From Open Data to Algorithmic Transparency
+            </h3>
+            <Timeline />
+          </div>
         </FadeInSection>
 
         <FadeInSection index={2}>
           <p className="text-2xl text-left text-teal-900">
           Ten years after the introduction of the Open Data Law and following the advancement and proliferation of Artificial Intelligence (AI) models, 
           the more recent <span className="text-3xl bold"><strong>Local Law 35</strong></span> now requires NYC agencies to annually report on their use of algorithmic tools, 
-            including descriptions of the tool’s use and purpose, datasets used, and vendor involvement. 
+            including descriptions of the tool's use and purpose, datasets used, and vendor involvement. 
             These algorithms assist agencies in significant decision-making processes, such as
         </p>
         </FadeInSection>
@@ -48,7 +59,7 @@ export default function BackgroundPage() {
             className="w-15 md:w-20 rounded-md -rotate-15 mr-4"
             />
             <p className="text-xl md:text-3xl max-w-md text-left text-gray-700">
-                <span className="underline">Preventing fires</span> by predicting and inspecting high-risk buildings.
+                <span className="font-bold">Preventing fires</span> by predicting and inspecting high-risk buildings.
             </p>
             </div>
         </FadeInSection>
@@ -61,7 +72,7 @@ export default function BackgroundPage() {
             className="w-15 md:w-20 rounded-md rotate-10"
             />
             <p className="text-xl md:text-3xl max-w-md text-gray-700">
-            Or determining which <span className="underline">public school a student applicant is matched to</span> 
+            Or determining which <span className="font-bold">public school a student applicant is matched to</span> 
             </p>
         </div>
         </FadeInSection>
@@ -74,7 +85,7 @@ export default function BackgroundPage() {
             className="w-25 md:w-35 rounded-md"
             />
             <p className="text-xl md:text-3xl max-w-md text-left text-gray-700">
-            or even how a defendant is <span className="underline">prosecuted.</span>
+            or even how a defendant is <span className="font-bold">prosecuted</span>
             </p>
         </div>
         </FadeInSection>
@@ -103,6 +114,24 @@ export default function BackgroundPage() {
             <li>Influence algorithm design in City agencies</li>
             <li>Advocate for fairness in AI tools</li>
           </ul>
+        </FadeInSection>
+
+        <FadeInSection index={6}>
+          <div className="text-left">
+            <h3 className="text-3xl font-bold text-teal-900 mb-6 text-center">
+              Frequently Asked Questions
+            </h3>
+            <FAQAccordion />
+          </div>
+        </FadeInSection>
+
+        <FadeInSection index={7}>
+          <div className="text-left">
+            <h3 className="text-3xl font-bold text-teal-900 mb-6 text-center">
+              Resources & Links
+            </h3>
+            <QuickLinks />
+          </div>
         </FadeInSection>
       </div>
     );
